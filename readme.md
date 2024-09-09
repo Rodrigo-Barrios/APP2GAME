@@ -36,7 +36,7 @@ dotnet ef database update
 
 dotnet ef migrations remove
 
-## migraciones con portgress
+## migraciones con postgress
 
 dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 8.0.4
 
