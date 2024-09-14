@@ -14,5 +14,10 @@ public class ApplicationDbContext : IdentityDbContext
 
     public DbSet<APP2GAME.Models.Contacto> DataContacto { get; set; }
 
+    public DbSet<APP2GAME.Models.Categoria> DataCategoria { get; set; }
+
+    public DbSet<APP2GAME.Models.Producto> DataProducto { get; set; }
+
+
     
 }
