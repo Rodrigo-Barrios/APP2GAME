@@ -69,4 +69,4 @@ Account.AccessDenied: Página que muestra cuando un usuario intenta acceder a un
 Account.ExternalLogin: Página para manejar logins externos, como Google, Facebook, etc.
 Account.Manage: Página para que los usuarios administren su cuenta (cambiar contraseña, etc.).
 Account.Logout: Acción para cerrar sesión.
-Account.Lockout: Página que muestra cuando una cuenta ha sido bloqueada
+Account.Lockout: Página que muestra cuando una cuenta ha sido bloqueada.
