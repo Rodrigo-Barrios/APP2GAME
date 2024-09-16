@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using APP2GAME.Data;
-
+using System.Dynamic;
 
 namespace APP2GAME.Controllers
 {
@@ -24,8 +24,12 @@ namespace APP2GAME.Controllers
 
         public IActionResult Index()
         {
+            var categorias = from o in _context.DataCategoria select o;
             var catalogos = from o in _context.DataProducto select o;
-            return View(catalogos);
+            dynamic model = new ExpandoObject();
+            model.itemCategorias = categorias;
+            model.itemCatalogos = catalogos;
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
