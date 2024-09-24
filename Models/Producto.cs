@@ -23,7 +23,7 @@ namespace APP2GAME.Models
 
         public string? ImageURL { get; set; }
 
-        public Categoria? categoria { get; set; }
+        public Categoria? Categoria { get; set; }
 
     }
 }
