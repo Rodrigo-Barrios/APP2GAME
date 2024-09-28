@@ -10,6 +10,7 @@ namespace APP2GAME.Models
         public string? Name { get; set; }
         public string? Email { get; set; }
         public string? Message { get; set; }
+        [NotMapped]
         public string? Contrasena { get; set; }
     }
 }
