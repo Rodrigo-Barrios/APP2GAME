@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using APP2GAME.Models;
 using APP2GAME.ViewModel;
+using APP2GAME.Helper;
 
 namespace APP2GAME.Controllers
 {
@@ -35,7 +36,7 @@ namespace APP2GAME.Controllers
         }
 
     [HttpPost]
-    public IActionResult Enviar(ContactoViewModel viewModel)
+    public async Task<IActionResult> Enviar(ContactoViewModel viewModel)
         {
             _logger.LogDebug("Ingreso a Enviar Mensaje");
             
@@ -44,8 +45,13 @@ namespace APP2GAME.Controllers
                 Name = viewModel.FormContacto.Name,
                 Email = viewModel.FormContacto.Email,
                 Message = viewModel.FormContacto.Message,
+                Contrasena = viewModel.FormContacto.Contrasena
             };
 
+            var emailService = new SendMail();
+            await emailService.EnviarCorreoAsync(contacto.Email, "Asunto del correo", contacto.Message,contacto.Contrasena);
+            
+            
             _context.Add(contacto);
             _context.SaveChanges();
 
