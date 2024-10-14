@@ -23,6 +23,8 @@ namespace APP2GAME.Controllers
 
         public IActionResult Index()
         {
+            var currencySymbols = _currencyExchangeIntegration.GetCurrencySymbols();
+            ViewData["symbols"] = currencySymbols.Result.Symbols;
             return View();
         }
 
