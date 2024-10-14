@@ -1,0 +1,39 @@
+POST https://dummyjson.com/todos/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "todo": "Use DummyJSON in the project",
+    "completed": false,
+    "userId": 5
+}
+
+
+GET https://dummyjson.com/todos/ HTTP/1.1
+Accept: application/json
+
+
+GET https://dummyjson.com/todos/1 HTTP/1.1
+Accept: application/json
+
+GET https://dummyjson.com/todos/255 HTTP/1.1
+Accept: application/json
+
+
+GET https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=USD&to=EUR&amount=750 HTTP/1.1
+x-rapidapi-key: 46a5eb5a15mshcc12c7770901aebp10ecc8jsne67d8e53c19c
+
+
+{
+  "success": true,
+  "query": {
+    "from": "USD",
+    "to": "EUR",
+    "amount": 750
+  },
+  "info": {
+    "timestamp": 1728931336,
+    "rate": 0.91729
+  },
+  "date": "2024-10-14",
+  "result": 687.9675
+}
