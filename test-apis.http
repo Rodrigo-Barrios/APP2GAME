@@ -23,6 +23,7 @@ GET https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=U
 x-rapidapi-key: 46a5eb5a15mshcc12c7770901aebp10ecc8jsne67d8e53c19c
 
 
+
 {
   "success": true,
   "query": {
@@ -37,3 +38,11 @@ x-rapidapi-key: 46a5eb5a15mshcc12c7770901aebp10ecc8jsne67d8e53c19c
   "date": "2024-10-14",
   "result": 687.9675
 }
+
+
+GET https://currency-conversion-and-exchange-rates.p.rapidapi.com/symbols HTTP/1.1
+x-rapidapi-key: 46a5eb5a15mshcc12c7770901aebp10ecc8jsne67d8e53c19c
+
+
+GET https://cautious-robot-5gj4jr99p4hvjv6-5232.app.github.dev/api/producto HTTP/1.1
+Accept: application/json
