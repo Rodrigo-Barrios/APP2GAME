@@ -44,5 +44,9 @@ GET https://currency-conversion-and-exchange-rates.p.rapidapi.com/symbols HTTP/1
 x-rapidapi-key: 46a5eb5a15mshcc12c7770901aebp10ecc8jsne67d8e53c19c
 
 
-GET https://cautious-robot-5gj4jr99p4hvjv6-5232.app.github.dev/api/producto HTTP/1.1
+GET https://cautious-robot-5gj4jr99p4hvjv6-5103.app.github.dev/api/producto HTTP/1.1
+Accept: application/json
+
+
+GET http://localhost:5103/api/producto/2 HTTP/1.1
 Accept: application/json

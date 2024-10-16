@@ -27,7 +27,7 @@ namespace APP2GAME.Service
             return productos;
         }
 
-        public async Task<Producto?> Get(int? id){
+        public async Task<Producto?> Get(long? id){
             if (id == null || _context.DataProducto == null)
             {
                 return null;
